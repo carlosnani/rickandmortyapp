@@ -14,6 +14,7 @@ export const GlobalContext = createContext();
       .then((data) => setData(data.results));
   }, []);
 
+  
 
     return (
       <GlobalContext.Provider value={data}>
