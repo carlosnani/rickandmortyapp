@@ -1,8 +1,10 @@
+import { Board } from '../../components/Board';
+
 
 export function Home() {
   return (
     <div>
-      <h1>Home</h1>
+      <Board />
     </div>
   )
 }
