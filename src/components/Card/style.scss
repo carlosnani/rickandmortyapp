@@ -183,11 +183,14 @@
     }
 
     div {
-      margin-top: 200px;
+      margin-top: 230px;
       transition: all 0.3s ease-in-out;
+      
       div {
         padding: 16px;
         position: relative;
+        width: 230px;
+        height: 260px;
         top: -195px;
         left: 0px;
         opacity: 0.9;
@@ -220,7 +223,7 @@
     }
     &:hover {
       div {
-         margin-top: -15px;
+         margin-top: -50px;
       }
     }
   }

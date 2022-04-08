@@ -1,17 +1,22 @@
 import React from 'react'
+import { FaGithub }  from "react-icons/fa"
+
+import './style.scss'
 
 export function Footer() {
   return (
-    <div>
-      <p className="text-center">
-        <FaGithub/> 
-           <a className="mx-2"
-           href="https://github.com/carlosnani"
-           target="_blank"
-           > 
+    <footer>
+      <div>
+        <p>
+          <FaGithub />
+          <a
+            href="https://github.com/carlosnani"
+            target="_blank"
+          >
             Carlos Nani
-           </a>
+          </a>
         </p>
-    </div>
+      </div>
+    </footer>
   )
 }

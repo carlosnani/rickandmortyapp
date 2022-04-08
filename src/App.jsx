@@ -1,6 +1,8 @@
 import { GlobalStorage }  from './context/globalContext';
 import { Header } from './components/Header';
 import { Board } from './components/Board';
+import { Footer } from './components/Footer';
+
 
 import './globalStyle.scss';
 
@@ -12,6 +14,7 @@ function App() {
       <Header />
       <Board />
     </div>
+    <Footer />
     </GlobalStorage>
   )
 }
