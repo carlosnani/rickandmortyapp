@@ -1,0 +1,90 @@
+@media only screen and (max-width: 600px) {
+  button {
+    color: #393939;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+    padding: 8px;
+    background: #07ec6e;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover {
+      background: #09bc5a;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  button {
+    color: #393939;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+    padding: 8px;
+    background: #07ec6e;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover {
+      background: #09bc5a;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  button {
+    color: #393939;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+    padding: 8px;
+    background: #07ec6e;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover {
+      background: #09bc5a;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  button {
+    color: #393939;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+    padding: 8px;
+    background: #07ec6e;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover {
+      background: #09bc5a;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  button {
+    color: #393939;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 8px;
+    background: #07ec6e;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover {
+      background: #09bc5a;
+    }
+  }
+}

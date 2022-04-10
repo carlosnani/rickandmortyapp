@@ -1,4 +1,6 @@
+import { Button } from '../Button';
 import "./style.scss";
+
 
 export function Card({ name, image, species, status, origin }) {
   return (
@@ -10,9 +12,9 @@ export function Card({ name, image, species, status, origin }) {
           <p>{status}</p>
           <p>{origin}</p>
           <p>{species}</p>
-          <button >
+          <Button >
             View More
-          </button>
+          </Button>
         </div>
       </div>
     </div>

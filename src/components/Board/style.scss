@@ -5,10 +5,12 @@
     height: auto;
     padding: 0 20px;
     background: #333;
-
     display: grid;
     grid-template-columns: auto ;
     justify-content: center;
+      button {
+
+      }
   }
 }
 
@@ -17,8 +19,7 @@
     margin: 0 auto;
     width: 580px;
     height: auto;
-    background: #333;
-        
+    background: #333;        
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
@@ -31,11 +32,9 @@
     width: 758px;
     height: auto;
     background: #333;
-
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
   }  
 }
 
@@ -45,7 +44,6 @@
     width: 982px;
     height: auto;
     background: #333;
-
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: space-between;
@@ -56,11 +54,14 @@
   .board {
     width: 1180px;
     height: auto;
-    background: #333;
-
+    background: #333;    
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: space-between;
+
+    button {
+      margin-top: 120px;  
+    }
   }
 }
 

@@ -6,7 +6,7 @@ export const GlobalContext = createContext();
 export const GlobalStorage = ({children}) => { 
 
   const [characters , setCharacters] = useState([]);
-  const [episode, setEpisode] = useState('Daisy');
+  const [episode, setEpisode] = useState([]);
   
 
   useEffect(() => {
@@ -27,8 +27,6 @@ export const GlobalStorage = ({children}) => {
     } 
     fetchData();
   }, []);
-
- 
 
     return (
       <GlobalContext.Provider value={{characters, episode}}>
