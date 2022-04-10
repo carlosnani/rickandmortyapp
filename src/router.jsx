@@ -7,17 +7,18 @@ import { Locations } from "./pages/Locations";
 
 
 
-export function router() {
+export function Routers({children}) {
   return (
- 
-        <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/episodes" element={<Episodes />} />
-            <Route path="/locations" element={<Locations />} />
-            <Route path="/about" element={<About />} />
-          </Routes>          
-        </BrowserRouter>
 
+    <BrowserRouter>
+    {children}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/episodes" element={<Episodes />} />
+        <Route path="/locations" element={<Locations />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
+     
   )
 }

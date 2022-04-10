@@ -6,26 +6,31 @@ import './style.scss';
 
 export function Board() {
 
-  const data = useContext(GlobalContext);
- 
-  
-  return (
-    <div className="board">
+  const { characters } = useContext(GlobalContext);
 
-     {data.map(({name, image, species, status, origin}, index) => {
-        return (
-           <Card 
-            key={index}
-            name={name}
-            image={image}
-            species={species}
-            status={status}            
-            origin={origin.name}
+  if (characters === null) {
+    return (
+      <div className="noBoard">
+        <h2>Sorry, but the data does not exist 😢</h2>
+      </div>
+    )
+  } else {
+    return (
+      <div className="board">
+
+        {characters.map(({ name, image, species, status, origin }, index) => {
+          return (
+            <Card
+              key={index}
+              name={name}
+              image={image}
+              species={species}
+              status={status}
+              origin={origin.name}
             />
-        )
-     })}
-
-      
-    </div>
-  )
+          )
+        })}
+      </div>
+    )
+  }
 }
