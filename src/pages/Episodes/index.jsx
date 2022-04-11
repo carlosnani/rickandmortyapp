@@ -1,14 +1,15 @@
 import { GlobalContext } from '../../context/globalContext';
-import { useContext } from 'react'
-import { Table } from '../../components/Table';
+import { useContext } from 'react';
 import '../../globalStyle.scss';
 import './style.scss';
 
 
 export function Episodes() {
 
-  const { episode } = useContext(GlobalContext);
- 
+  const { episodes } = useContext(GlobalContext);
+
+  console.log(episodes);
+
   return (
     <>
       <div className="container">
@@ -17,42 +18,36 @@ export function Episodes() {
         </div>
       </div>
       <div className="container">
+
         <table className="table-content">
-          <thead className>
+          <thead>
             <tr>
               <th>Name</th>
               <th>Air Date</th>
-              <th>Episode</th>   
-              <th></th>           
+              <th>Episode</th>
+              <th> </th>
             </tr>
           </thead>
           <tbody>
-            {episode.map(({ name, air_date, episode }, index) => {
+
+            {episodes.map(({ name, air_date, episode }, index) => {
               return (
-                <Table
-                  key={index}
-                  name={name}
-                  air_date={air_date}
-                  episode={episode}
-                />
-              )                 
+                <tr key={index}>
+                  <td>{name}</td>
+                  <td>{air_date}</td>
+                  <td>{episode}</td>
+                  <td>
+                    <button>
+                      episode
+                    </button>
+                  </td>
+                </tr>
+              )
             })}
-              
-         
-  
-            
-            {/* {episode.map(({name, air_date, episode},index) => (
-              <tr key={index}>
-                <td>{name}</td>
-                <td>{air_date}</td>
-                <td>{episode}</td>
-                <th>
-                    <Button>Detail</Button>  
-                </th>   
-              </tr>
-            ))} */}
+
           </tbody>
         </table>
+
       </div>
     </>
   )
