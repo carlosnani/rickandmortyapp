@@ -1,15 +1,14 @@
 import { GlobalContext } from '../../context/globalContext';
 import { useContext } from 'react'
+import { Table } from '../../components/Table';
 import '../../globalStyle.scss';
 import './style.scss';
-
 
 
 export function Episodes() {
 
   const { episode } = useContext(GlobalContext);
-  console.log(episode);
-
+ 
   return (
     <>
       <div className="container">
@@ -28,16 +27,30 @@ export function Episodes() {
             </tr>
           </thead>
           <tbody>
-            {episode.map(({name, air_date, episode},index) => (
+            {episode.map(({ name, air_date, episode }, index) => {
+              return (
+                <Table
+                  key={index}
+                  name={name}
+                  air_date={air_date}
+                  episode={episode}
+                />
+              )                 
+            })}
+              
+         
+  
+            
+            {/* {episode.map(({name, air_date, episode},index) => (
               <tr key={index}>
                 <td>{name}</td>
                 <td>{air_date}</td>
                 <td>{episode}</td>
                 <th>
-                    <button className="btn-detail">Detail</button>  
+                    <Button>Detail</Button>  
                 </th>   
               </tr>
-            ))}
+            ))} */}
           </tbody>
         </table>
       </div>

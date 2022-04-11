@@ -4,8 +4,7 @@ import { useContext } from 'react';
 
 export function Locations() {
 
-  const { locations } = useContext(GlobalContext);
-
+  const { locations } = useContext(GlobalContext); 
 
   return (
     <div className="container">
@@ -13,7 +12,7 @@ export function Locations() {
         <h1>Locations</h1>
       </div>
       <div className="container">
-        
+         
       </div>  
     </div>
   )

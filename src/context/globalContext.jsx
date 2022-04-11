@@ -7,6 +7,7 @@ export const GlobalStorage = ({children}) => {
 
   const [characters , setCharacters] = useState([]);
   const [episode, setEpisode] = useState([]);
+  const [locations, setLocations] = useState([]);
   
 
   useEffect(() => {
@@ -27,9 +28,20 @@ export const GlobalStorage = ({children}) => {
     } 
     fetchData();
   }, []);
+  
+  useEffect(() => {
+    async function fetchData(){
+      const response = await fetch("https://rickandmortyapi.com/api/episode");
+      const data = await response.json();
+      setLocations(data.results);
+    } 
+    fetchData();
+  }, []);
+  
+
 
     return (
-      <GlobalContext.Provider value={{characters, episode}}>
+      <GlobalContext.Provider value={{characters, episode,locations}}>
         {children}
       </GlobalContext.Provider>
     )
