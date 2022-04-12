@@ -12,11 +12,11 @@ function App() {
   return (
 
     <GlobalStorage>
-      <Header />
       <Routers>
+      <Header />      
         <Menu />  
+        <Footer />
       </Routers>       
-      <Footer />
     </GlobalStorage>
 
   )

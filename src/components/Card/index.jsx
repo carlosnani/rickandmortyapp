@@ -2,7 +2,7 @@ import { Button } from '../Button';
 import "./style.scss";
 
 
-export function Card({ name, image, species, status, origin }) {
+export function Card({ name, image, species, status, origin, id}) {
   return (
     <div className="card">
       <img src={image} alt={name} />
@@ -12,7 +12,7 @@ export function Card({ name, image, species, status, origin }) {
           <p>{status}</p>
           <p>{origin}</p>
           <p>{species}</p>
-          <Button >
+          <Button id={id}>
             View More
           </Button>
         </div>

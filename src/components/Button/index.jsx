@@ -1,9 +1,19 @@
- import './style.scss';
+import './style.scss';
+import { useContext} from 'react';
+import { GlobalContext } from '../../context/globalContext';
+import { Link } from "react-router-dom";
 
-export function Button() {
+export function Button({id}) {
+
+   const { character, setCharacter } = useContext(GlobalContext);
+
   return (
-    <button>
+    <Link to="/character">
+    <button onClick={() => {
+      setCharacter(id);
+    }}>
         View More
     </button>
+    </Link>
   );
 }

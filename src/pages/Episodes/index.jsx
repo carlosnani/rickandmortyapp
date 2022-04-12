@@ -7,9 +7,7 @@ import './style.scss';
 export function Episodes() {
 
   const { episodes } = useContext(GlobalContext);
-
-  console.log(episodes);
-
+ 
   return (
     <>
       <div className="container">

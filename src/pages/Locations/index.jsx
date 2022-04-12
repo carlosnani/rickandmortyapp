@@ -7,8 +7,6 @@ export function Locations() {
 
  const { locations } = useContext(GlobalContext);
 
- console.log(locations);
-
   return (
     <div className="container">
       <div className="title">

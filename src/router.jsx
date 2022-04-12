@@ -4,21 +4,20 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Episodes } from "./pages/Episodes";
 import { Locations } from "./pages/Locations";
-
+import { Characters } from "./pages/Characters";
 
 
 export function Routers({children}) {
   return (
-
     <BrowserRouter>
     {children}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/episodes" element={<Episodes />} />
         <Route path="/locations" element={<Locations />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<About />} />   
+        <Route path="/character" element={<Characters />} />        
       </Routes>
-    </BrowserRouter>
-     
+    </BrowserRouter>     
   )
 }

@@ -18,7 +18,7 @@ export function Board() {
     return (
       <div className="board">
 
-        {characters.map(({ name, image, species, status, origin }, index) => {
+        {characters.map(({ name, image, species, status, origin, id }, index) => {
           return (
             <Card
               key={index}
@@ -27,6 +27,7 @@ export function Board() {
               species={species}
               status={status}
               origin={origin.name}
+              id={id}
             />
           )
         })}
