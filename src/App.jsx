@@ -14,9 +14,9 @@ function App() {
     <GlobalStorage>
       <Routers>
       <Header />      
-        <Menu />  
-        <Footer />
-      </Routers>       
+        <Menu />          
+      </Routers>      
+      <Footer /> 
     </GlobalStorage>
 
   )
