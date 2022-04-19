@@ -23,7 +23,6 @@ export function Episodes() {
               <th>Name</th>
               <th>Air Date</th>
               <th>Episode</th>
-              <th> </th>
             </tr>
           </thead>
           <tbody>
@@ -34,11 +33,6 @@ export function Episodes() {
                   <td>{name}</td>
                   <td>{air_date}</td>
                   <td>{episode}</td>
-                  <td>
-                    <button>
-                      episode
-                    </button>
-                  </td>
                 </tr>
               )
             })}

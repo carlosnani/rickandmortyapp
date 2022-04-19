@@ -1,6 +1,7 @@
 import { Header } from './components/Header';
 import { Menu } from './components/Menu';
 import { Footer } from './components/Footer';
+
 import { GlobalStorage } from './context/globalContext';
 
 import { Routers } from './router'
@@ -14,8 +15,9 @@ function App() {
     <GlobalStorage>
       <Routers>
       <Header />      
-        <Menu />          
-      </Routers>      
+        <Menu />                
+      </Routers>    
+
       <Footer /> 
     </GlobalStorage>
 

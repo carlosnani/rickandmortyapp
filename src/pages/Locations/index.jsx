@@ -19,7 +19,6 @@ export function Locations() {
                 <th>Name</th>
                 <th>Type</th>
                 <th>Dimension</th>
-                <th> </th>
               </tr>
             </thead>
             <tbody>
@@ -29,12 +28,6 @@ export function Locations() {
                   <td>{name}</td>
                   <td>{type}</td>
                   <td>{dimension}</td>
-
-                  <td>
-                    <button>
-                      View
-                    </button>
-                  </td>
                 </tr>
               ))}
             </tbody>

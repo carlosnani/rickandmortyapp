@@ -6,7 +6,7 @@ import "./style.scss";
 export function Characters() {
 
   const { currentCharacter } = useContext(GlobalContext);
-  const { name, status, species, image, location, gender, created } = currentCharacter;
+  const { name, status, species, image, location, gender, created, episode } = currentCharacter;
 
   const createdDate = new Date(created);
   const dateInfoCharacter = createdDate.toLocaleDateString('pt-br');
@@ -31,7 +31,7 @@ export function Characters() {
           </div>         
         </div>
         </div>
-      </div>
+      </div>      
     </div>
   )
 }
