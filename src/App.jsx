@@ -17,7 +17,6 @@ function App() {
       <Header />      
         <Menu />                
       </Routers>    
-
       <Footer /> 
     </GlobalStorage>
 

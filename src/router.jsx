@@ -4,7 +4,7 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Episodes } from "./pages/Episodes";
 import { Locations } from "./pages/Locations";
-import { Characters } from "./pages/Characters";
+import { Characters } from "./pages/Character";
 
 
 export function Routers({children}) {

@@ -1,11 +1,12 @@
 import { GlobalContext } from '../../context/globalContext'; 
 import { useContext } from 'react';
+import { Pagination } from '../../components/Pagination';
 import '../../globalStyle.scss';
 
 
 export function Locations() {
 
- const { locations } = useContext(GlobalContext);
+ const { locations, currentLocationsPage, setCurrentLocationsPage } = useContext(GlobalContext);
 
   return (
     <div className="container">
@@ -33,6 +34,11 @@ export function Locations() {
             </tbody>
           </table>
       </div>  
+      <Pagination
+        currentPage={currentLocationsPage}
+        setCurrentPage={setCurrentLocationsPage}
+        items={locations}
+      />
     </div>
   )
 }

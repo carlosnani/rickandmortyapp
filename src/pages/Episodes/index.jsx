@@ -1,13 +1,13 @@
 import { GlobalContext } from '../../context/globalContext';
 import { useContext } from 'react';
+import { Pagination } from '../../components/Pagination';
 import '../../globalStyle.scss';
 import './style.scss';
 
-
 export function Episodes() {
 
-  const { episodes } = useContext(GlobalContext);
- 
+  const { episodes, currentEpisodesPage, setCurrentEpisodesPage } = useContext(GlobalContext);
+
   return (
     <>
       <div className="container">
@@ -39,7 +39,11 @@ export function Episodes() {
 
           </tbody>
         </table>
-
+        <Pagination
+          currentPage={currentEpisodesPage}
+          setCurrentPage={setCurrentEpisodesPage}
+          items={episodes}
+        />
       </div>
     </>
   )
