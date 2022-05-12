@@ -19,5 +19,6 @@ export function Routers({children}) {
         <Route path="/character" element={<Characters />} />        
       </Routes>
     </BrowserRouter>     
+     
   )
 }
