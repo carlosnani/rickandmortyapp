@@ -1,8 +1,10 @@
 # Rick And Morty App
 
-Esse é um app que busca informações sobre os personagens de Rick and Morty e apresenta para o usuário. Esse app foi desenvolvido com para estudo framework ReactJs, iniciado com ![Vite site](https://vitejs.dev/) e utiliza a API da Rick and Morty.
+Esse é um app que busca informações sobre os personagens de Rick and Morty e apresenta para o usuário. Esse app foi desenvolvido com para estudo framework ReactJs, iniciado com ![Vite](https://vitejs.dev/) e utiliza a API da Rick and Morty.
 
-This is a app that displays information about the characters of Rick and Morty and presents it to the user. This app was developed for study with ReactJs, started with ![Vite site](https://vitejs.dev/) and uses the API of Rick and Morty.
+[Vite](https://vitejs.dev/)
+
+This is a app that displays information about the characters of Rick and Morty and presents it to the user. This app was developed for study with ReactJs, started with ![ ](https://vitejs.dev/) and uses the API of Rick and Morty.
 
 ### Como usar?
 - 1 Download ou clone o repositório.
